@@ -1,7 +1,8 @@
 :root {
   --primary: lightgrey;
   --secondary:lightcoral;
-  --accent: orange;  
+  --accent: orange;
+  --box-shadow-width: 6px;
 }
 
 * {
@@ -64,7 +65,6 @@
   border-radius: 5px;
   margin: 10px;
 }
-
 .chat-reply {
   align-self: flex-end;
   display: block;
@@ -73,6 +73,12 @@
   width: fit-content;
   border-radius: 5px;
   margin: 10px;  
+}
+.chat-msg:hover, 
+.chat-reply:hover {
+  box-shadow: 0 0 var(--box-shadow-width) black;
+  user-select: none;
+  cursor: pointer;
 }
 #chat-history {
   display: flex;
@@ -133,7 +139,7 @@
 }
 
 #chat-input:hover {
-  box-shadow: 0 0 4px var(--accent);
+  box-shadow: 0 0 var(--box-shadow-width) var(--accent);
 }
 
 /*TODO: this is not working ??? */
