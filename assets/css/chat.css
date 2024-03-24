@@ -4,6 +4,10 @@
   --accent: orange;  
 }
 
+* {
+  outline: none;
+}
+
 /** BEGIN: Background **/
 .bg {
 
@@ -120,14 +124,19 @@
   border: 1px solid lightgray;
   border-radius: 20px;
 }
+#chat-input:focus-within,
 #chat-input:focus-visible,
 #chat-input:target,
 #chat-input:active,
-#chat-input:focus {
-  border: 1px solid var(--accent);
-  border-color: var(--accent);
+#chat-input:focus {  
+  border-color: var(--accent);    
 }
 
+#chat-input:hover {
+  box-shadow: 0 0 4px var(--accent);
+}
+
+/*TODO: this is not working ??? */
 ::-webkit-scrollbar-track {
   background-color: transparent;
   border-radius: 9999px;
