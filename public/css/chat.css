@@ -49,7 +49,7 @@
 /** END: Background ** /
 
 /** BEGIN: Chat Box ***/
-.chat-section {
+#chat-section {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -96,7 +96,7 @@
   overflow-y: auto;
 }
 
-.chat-box {
+#chat-box {
   padding: 20px;
   background-color: antiquewhite;
   display: flex;
